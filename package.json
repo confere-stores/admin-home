@@ -27,7 +27,7 @@
     "@ecomplus/utils": "^1.4.1",
     "bootstrap-vue": "^2.21.2",
     "chart.js": "^2.9.4",
-    "chartjs-plugin-annotation": "^0.5.7",
+    "chartjs-plugin-annotation": "^1.0.1",
     "core-js": "^3.9.1",
     "vue": "^2.6.12",
     "vue-social-sharing": "^3.0.5",
