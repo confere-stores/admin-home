@@ -1,7 +1,7 @@
 {
-  "name": "@ecomplus/admin-home",
+  "name": "@confere-stores/admin-home",
   "description": "E-Com Plus dashboard homepage with Vue 2 SPA",
-  "version": "1.1.0-rc.0",
+  "version": "1.1.0-rc.1",
   "module": "src/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ecomplus/admin-home.git"
+    "url": "git+https://github.com/confere-stores/admin-home.git"
   },
   "author": "E-Com Club <ti@e-com.club>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/ecomplus/admin-home/issues"
+    "url": "https://github.com/confere-stores/admin-home/issues"
   },
-  "homepage": "https://github.com/ecomplus/admin-home#readme",
+  "homepage": "https://github.com/confere-stores/admin-home#readme",
   "dependencies": {
     "@ecomplus/admin-helpers": "^1.2.4",
     "@ecomplus/auth": "^1.0.1",

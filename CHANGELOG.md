@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-rc.1](https://github.com/confere-stores/admin-home/compare/v1.1.0-rc.0...v1.1.0-rc.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency core-js to ^3.9.1 ([#6](https://github.com/confere-stores/admin-home/issues/6)) ([2d58863](https://github.com/confere-stores/admin-home/commit/2d58863849a2e87ab638313d40a5dd13024217c6))
+
 ## [1.1.0-rc.0](https://github.com/ecomplus/admin-home/compare/v0.9.4...v1.1.0-rc.0) (2021-02-24)
 
 
