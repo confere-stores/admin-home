@@ -101,21 +101,6 @@ export default {
           ['Melhor Envio', '/#/apps/edit/1236', true]
         ]
       }, {
-        isDone: this.hasPaymentMethod,
-        icon: 'credit-card',
-        text: i18n({
-          en_us: 'Check our app store for all integrated payment options, ' +
-            'choose and configure at least one for your store.',
-          pt_br: 'Verifique em nossa loja de aplicativos todas as opções de pagamento integradas, ' +
-            'escolha e configure pelo menos uma para sua loja.'
-        }),
-        ctas: [
-          [this.i19apps, '/#/apps'],
-          [this.i19customPayment, '/#/apps/edit/108091', true],
-          ['PagHiper', '/#/apps/edit/1251', true],
-          ['Pagar.me', '/#/apps/edit/117391', true]
-        ]
-      }, {
         isDone: false,
         icon: 'inbox',
         text: i18n({

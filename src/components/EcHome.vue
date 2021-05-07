@@ -43,10 +43,10 @@
                         class="fa fa-picture-o fs-50 ml-4 opacity-50"
                       ></i>
                       <a
-                        class="text-secondary ml-3"
-                        href="#"
-                        @click.prevent="uploadLogo"
-                        :title="i19uploadLogo"
+                              class="text-secondary ml-3"
+                              href="#"
+                              @click.prevent="uploadLogo"
+                              :title="i19uploadLogo"
                       >
                         <i class="ti-pencil"></i>
                       </a>
@@ -79,29 +79,11 @@
                           >
                             {{ store.domain }}
                           </a>
-                          <a
-                            class="text-secondary ml-1"
-                            href="#"
-                            @click.prevent="isEditingDomain = !isEditingDomain"
-                            :title="i19setStoreDomain"
-                          >
-                            <i class="ti-pencil"></i>
-                          </a>
                         </span>
                       </div>
 
                       <slide-y-up-transition>
                         <div v-if="store.domain">
-                          <a
-                            target="_blank"
-                            :href="`https://${store.domain}/admin/`"
-                            class="btn btn-primary mr-3 mt-2"
-                          >
-                            <i class="ti-paint-roller"></i>
-                            <span class="ml-1 d-none d-md-inline">
-                              {{ i19editStorefront }}
-                            </span>
-                          </a>
                           <a
                             target="_blank"
                             :href="shopLink"
@@ -314,7 +296,7 @@
         alt="E-Com Plus"
         class="img-fluid mt-5"
         width="200"
-        src="https://ecom.nyc3.digitaloceanspaces.com/brand/plus/248x54.png"
+        src="https://www.conferecartoes.com.br/hubfs/logo-209.png"
       >
     </div>
 

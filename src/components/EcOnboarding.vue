@@ -43,21 +43,6 @@
           </div>
         </li>
       </ol>
-
-      <div>
-        <div
-          class="mx-auto"
-          style="max-width: 800px"
-        >
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              :src="`https://www.youtube.com/embed/${youtubeVideo}?rel=0&list=${youtubePlaylist}&index=1`"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
     </div>
   </article>
 </template>

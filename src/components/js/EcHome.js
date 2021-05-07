@@ -20,6 +20,8 @@ import {
   // i19uploadLogo
 } from '@ecomplus/i18n'
 
+import axios from 'axios'
+
 import { i18n, formatMoney } from '@ecomplus/utils'
 import ecomAuth from '@ecomplus/auth'
 import { toast, handleApiError, uploadPictures } from '@ecomplus/admin-helpers'
@@ -218,8 +220,18 @@ export default {
     formatMoney,
 
     updateStore (data) {
-      return this.ecomAuth.requestApi('stores/me', 'patch', data || this.store)
-        .catch(handleApiError)
+      return axios.patch('https://api.confere.com.br/store', {
+        ...(data || this.store),
+        store_id: this.storeId
+      })
+          .then(() => {
+            return this.ecomAuth.requestApi('stores/me', 'patch', data || this.store)
+                .catch(handleApiError)
+          })
+          .catch(() => {
+            return this.ecomAuth.requestApi('stores/me', 'patch', data || this.store)
+                .catch(handleApiError)
+          })
     },
 
     setDomain () {
@@ -239,6 +251,7 @@ export default {
         .then(pictures => {
           if (pictures.length) {
             const logo = pictures[0].zoom
+            console.log('LOGO', logo)
             this.updateStore({ logo }).then(() => {
               this.store.logo = logo
             })
@@ -342,11 +355,22 @@ export default {
         .then(store => {
           this.storeId = store.store_id
           for (const field in this.store) {
-            const val = store[field] || store.$main[field]
+            const val = store [field] || store.$main[field]
             if (this.store[field] !== undefined && val) {
               this.store[field] = val
             }
           }
+          window.Intercom("boot", {
+            app_id: "fqllm5mp",
+            email: this.store.financial_email,
+            location: "admin.confere.app"
+          });
+          window.LogRocket.identify(store.store_id, {
+            email: this.store.financial_email,
+          });
+          window.analytics.identify(store.store_id, {
+            email: this.store.financial_email,
+          })
           if (!hasStarted) {
             ecomAuth.on('updateStore', fetchStore)
             hasStarted = true
