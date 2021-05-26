@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-rc.2](https://github.com/confere-stores/admin-home/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2021-05-26)
+
+
+### Features
+
+* returning storefront icon ([c22a24a](https://github.com/confere-stores/admin-home/commit/c22a24a9ae67d50d763b37311794e5e4b2e0ab2e))
+* some updates ([55a45ce](https://github.com/confere-stores/admin-home/commit/55a45cef195eaf07fe5b406cd3f8c7531d1c91b5))
+
 ## [1.1.0-rc.1](https://github.com/confere-stores/admin-home/compare/v1.1.0-rc.0...v1.1.0-rc.1) (2021-05-07)
 
 
