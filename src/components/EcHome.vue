@@ -86,6 +86,16 @@
                         <div v-if="store.domain">
                           <a
                             target="_blank"
+                            :href="`https://${store.domain}/admin/`"
+                            class="btn btn-primary mr-3 mt-2"
+                          >
+                            <i class="ti-paint-roller"></i>
+                            <span class="ml-1 d-none d-md-inline">
+                              {{ i19editStorefront }}
+                            </span>
+                          </a>
+                          <a
+                            target="_blank"
                             :href="shopLink"
                             class="btn btn-primary mt-2"
                           >
