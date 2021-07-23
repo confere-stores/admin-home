@@ -91,7 +91,7 @@
                           >
                             <i class="ti-paint-roller"></i>
                             <span class="ml-1 d-none d-md-inline">
-                              {{ i19editStorefront }}
+                              Personalizar loja
                             </span>
                           </a>
                           <a
