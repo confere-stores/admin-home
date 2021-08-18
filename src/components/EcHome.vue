@@ -163,7 +163,7 @@
                   class="btn btn-sm btn-outline-secondary mt-2"
                 >
                   <i class="fa fa-puzzle-piece mr-1"></i>
-                  {{ i19apps }}
+                  Módulos
                 </a>
               </div>
             </div>
