@@ -95,6 +95,16 @@
                             </span>
                           </a>
                           <a
+                            class="btn btn-primary mr-3 mt-2"
+                            href="javascript:;"
+                            onclick="window.openIframeCustomize()"
+                          >
+                            <i class="ti-paint-roller"></i>
+                            <span class="ml-1 d-none d-md-inline">
+                              Personalização rápida
+                            </span>
+                          </a>
+                          <a
                             target="_blank"
                             :href="shopLink"
                             class="btn btn-primary mt-2"
