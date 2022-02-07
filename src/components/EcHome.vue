@@ -97,6 +97,16 @@
                           <a
                             class="btn btn-primary mr-3 mt-2"
                             href="javascript:;"
+                            onclick="window.openIframeTemplates()"
+                          >
+                            <i class="ti-paint-roller"></i>
+                            <span class="ml-1 d-none d-md-inline">
+                              Alterar template
+                            </span>
+                          </a>
+                          <a
+                            class="btn btn-primary mr-3 mt-2"
+                            href="javascript:;"
                             onclick="window.openIframeCustomize()"
                           >
                             <i class="ti-paint-roller"></i>
