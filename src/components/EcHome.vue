@@ -104,7 +104,7 @@
                               Alterar template
                             </span>
                           </a>
-                          <a
+                          <!-- <a
                             class="btn btn-primary mr-3 mt-2"
                             href="javascript:;"
                             onclick="window.openIframeCustomize()"
@@ -113,7 +113,7 @@
                             <span class="ml-1 d-none d-md-inline">
                               Personalização rápida
                             </span>
-                          </a>
+                          </a> -->
                           <a
                             target="_blank"
                             :href="shopLink"
